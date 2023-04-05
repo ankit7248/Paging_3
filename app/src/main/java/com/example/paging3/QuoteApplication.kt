@@ -1,8 +1,9 @@
 package com.example.paging3
 
 import android.app.Application
-import javax.inject.Singleton
+import dagger.hilt.android.HiltAndroidApp
 
-@Singleton
-class QuoteApplication: Application() {
+
+@HiltAndroidApp
+public class QuoteApplication: Application() {
 }
