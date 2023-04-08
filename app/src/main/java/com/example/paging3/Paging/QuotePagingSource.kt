@@ -13,7 +13,6 @@ class QuotePagingSource(private val quoteApi: QuoteApi) : PagingSource<Int, Resu
         return try {
             val position = params.key ?: 1 // params give the key of pages
             val response = quoteApi.getQuotes(position)
-
             return LoadResult.Page(
                 data = response.results, // we store the data
                 prevKey = if (position == 1) null
@@ -29,7 +28,7 @@ class QuotePagingSource(private val quoteApi: QuoteApi) : PagingSource<Int, Resu
 
     override fun getRefreshKey(state: PagingState<Int, Result>): Int? {
         // anchorPosition store the key of current page
-        // closestPageToPosition give the closest page arrounding the current page
+        // closestPageToPosition give the closest page arounding the current page
         // getfreshKey -> give the key page
 
 

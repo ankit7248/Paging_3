@@ -1,5 +1,4 @@
 package com.example.paging3.Paging
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,7 +20,7 @@ class QuotePagingAdapter : PagingDataAdapter<Result, QuotePagingAdapter.QuoteVie
         return QuoteViewHolder(view)
     }
     override fun onBindViewHolder(holder: QuoteViewHolder, position: Int) {
-        val item = getItem((position))
+        val item = getItem(position)
             if (item != null) {
                 holder.quote.text = item.content
             }

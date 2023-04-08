@@ -14,7 +14,6 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-
     // Infinite Scrolling
 
 //    private lateinit var binding: ActivityMainBinding

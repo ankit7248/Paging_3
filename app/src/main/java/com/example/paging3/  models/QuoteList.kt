@@ -1,4 +1,4 @@
-package com.example.paging3.  models
+package com.example.paging3.models
 
 data class QuoteList(
     val count: Int,
